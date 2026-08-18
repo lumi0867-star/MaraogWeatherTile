@@ -234,5 +234,5 @@ public class MaraogTileService extends TileService {
         executor.shutdownNow();
         super.onDestroy();
     }
-                  }
-  
+            }
+            
