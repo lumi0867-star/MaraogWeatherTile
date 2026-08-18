@@ -1,16 +1,23 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.2'
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.maraog.weather'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.maraog.weather"
+        minSdk 30
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
+dependencies {
+    implementation 'androidx.wear.tiles:tiles:1.1.0'
+    implementation 'androidx.wear.protolayout:protolayout:1.0.0'
+    implementation 'androidx.wear.protolayout:protolayout-expression:1.0.0'
+    implementation 'com.google.guava:guava:31.1-android'
 }
