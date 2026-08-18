@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.maraog.weather'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.maraog.weather"
+        minSdk 30
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation 'androidx.wear.tiles:tiles:1.4.0'
+    implementation 'androidx.wear.protolayout:protolayout:1.2.0'
+    implementation 'com.google.guava:guava:31.1-android'
+}
